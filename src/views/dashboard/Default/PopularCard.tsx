@@ -1,5 +1,5 @@
-import PropTypes from 'prop-types';
-import { useState } from 'react';
+// import PropTypes from 'prop-types';
+import React, { useState } from 'react';
 
 // material-ui
 import { useTheme } from '@mui/material/styles';
@@ -19,7 +19,7 @@ import KeyboardArrowDownOutlinedIcon from '@mui/icons-material/KeyboardArrowDown
 
 // ==============================|| DASHBOARD DEFAULT - POPULAR CARD ||============================== //
 
-const PopularCard = ({ isLoading }) => {
+const PopularCard = ({ isLoading }: any) => {
   const theme: any = useTheme();
 
   const [anchorEl, setAnchorEl] = useState(null);
@@ -302,8 +302,8 @@ const PopularCard = ({ isLoading }) => {
   );
 };
 
-PopularCard.propTypes = {
-  isLoading: PropTypes.bool
-};
+// PopularCard.propTypes = {
+//   isLoading: PropTypes.bool
+// };
 
 export default PopularCard;

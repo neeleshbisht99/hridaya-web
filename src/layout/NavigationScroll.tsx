@@ -1,5 +1,5 @@
 
-import PropTypes from 'prop-types';
+// import PropTypes from 'prop-types';
 import { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 
@@ -20,8 +20,8 @@ const NavigationScroll = ({ children }: any) => {
   return children || null;
 };
 
-NavigationScroll.propTypes = {
-  children: PropTypes.node
-};
+// NavigationScroll.propTypes = {
+//   children: PropTypes.node
+// };
 
 export default NavigationScroll;

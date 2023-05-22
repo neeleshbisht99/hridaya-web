@@ -1,4 +1,4 @@
-import PropTypes from 'prop-types';
+// import PropTypes from 'prop-types';
 import React from 'react';
 import { forwardRef } from 'react';
 // third-party
@@ -72,22 +72,22 @@ const AnimateButton = forwardRef<any, any>(({ children, type, direction, offset,
   }
 });
 
-AnimateButton.propTypes = {
-  children: PropTypes.node,
-  offset: PropTypes.number,
-  type: PropTypes.oneOf(['slide', 'scale', 'rotate']),
-  direction: PropTypes.oneOf(['up', 'down', 'left', 'right']),
-  scale: PropTypes.oneOfType([PropTypes.number, PropTypes.object])
-};
+// AnimateButton.propTypes = {
+//   children: PropTypes.node,
+//   offset: PropTypes.number,
+//   type: PropTypes.oneOf(['slide', 'scale', 'rotate']),
+//   direction: PropTypes.oneOf(['up', 'down', 'left', 'right']),
+//   scale: PropTypes.oneOfType([PropTypes.number, PropTypes.object])
+// };
 
-AnimateButton.defaultProps = {
-  type: 'scale',
-  offset: 10,
-  direction: 'right',
-  scale: {
-    hover: 1,
-    tap: 0.9
-  }
-};
+// AnimateButton.defaultProps = {
+//   type: 'scale',
+//   offset: 10,
+//   direction: 'right',
+//   scale: {
+//     hover: 1,
+//     tap: 0.9
+//   }
+// };
 
 export default AnimateButton;

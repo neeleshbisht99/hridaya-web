@@ -1,4 +1,4 @@
-import PropTypes from 'prop-types';
+// import PropTypes from 'prop-types';
 import { forwardRef } from 'react';
 import React from 'react';
 // material-ui
@@ -48,16 +48,16 @@ const SubCard = forwardRef<any, any>(({ children, content, contentClass, darkTit
   );
 });
 
-SubCard.propTypes = {
-  children: PropTypes.node,
-  content: PropTypes.bool,
-  contentClass: PropTypes.string,
-  darkTitle: PropTypes.bool,
-  secondary: PropTypes.oneOfType([PropTypes.node, PropTypes.string, PropTypes.object]),
-  sx: PropTypes.object,
-  contentSX: PropTypes.object,
-  title: PropTypes.oneOfType([PropTypes.node, PropTypes.string, PropTypes.object])
-};
+// SubCard.propTypes = {
+//   children: PropTypes.node,
+//   content: PropTypes.bool,
+//   contentClass: PropTypes.string,
+//   darkTitle: PropTypes.bool,
+//   secondary: PropTypes.oneOfType([PropTypes.node, PropTypes.string, PropTypes.object]),
+//   sx: PropTypes.object,
+//   contentSX: PropTypes.object,
+//   title: PropTypes.oneOfType([PropTypes.node, PropTypes.string, PropTypes.object])
+// };
 
 SubCard.defaultProps = {
   content: true

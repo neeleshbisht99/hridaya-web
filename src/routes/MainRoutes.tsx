@@ -5,8 +5,12 @@ import { lazy } from 'react';
 import MainLayout from 'src/layout/MainLayout';
 import Loadable from 'src/ui-component/Loadable';
 
+// main routing
+const PatientList = Loadable(lazy(() => import('src/views/studies/patientList')));
+
 // dashboard routing
 const DashboardDefault = Loadable(lazy(() => import('src/views/dashboard/Default')));
+
 
 // utilities routing
 const UtilsTypography = Loadable(lazy(() => import('src/views/utilities/Typography')));
@@ -26,16 +30,11 @@ const MainRoutes = {
   children: [
     {
       path: '/',
-      element: <DashboardDefault />
+      element: <PatientList />
     },
     {
-      path: 'dashboard',
-      children: [
-        {
-          path: 'default',
-          element: <DashboardDefault />
-        }
-      ]
+      path: '/dashboard',
+      element: <DashboardDefault />
     },
     {
       path: 'utils',

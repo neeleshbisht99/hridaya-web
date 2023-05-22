@@ -1,4 +1,4 @@
-import PropTypes from 'prop-types';
+// import PropTypes from 'prop-types';
 import React, { useState } from 'react';
 
 // material-ui
@@ -166,8 +166,8 @@ const TotalOrderLineChartCard = ({ isLoading }: any) => {
   );
 };
 
-TotalOrderLineChartCard.propTypes = {
-  isLoading: PropTypes.bool
-};
+// TotalOrderLineChartCard.propTypes = {
+//   isLoading: PropTypes.bool
+// };
 
 export default TotalOrderLineChartCard;

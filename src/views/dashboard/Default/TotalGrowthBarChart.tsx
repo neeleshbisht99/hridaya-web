@@ -1,5 +1,5 @@
-import PropTypes from 'prop-types';
-import { useState, useEffect } from 'react';
+// import PropTypes from 'prop-types';
+import React, { useState, useEffect } from 'react';
 import { useSelector } from 'react-redux';
 
 // material-ui
@@ -35,10 +35,10 @@ const status = [
 
 // ==============================|| DASHBOARD DEFAULT - TOTAL GROWTH BAR CHART ||============================== //
 
-const TotalGrowthBarChart = ({ isLoading }) => {
+const TotalGrowthBarChart = ({ isLoading }: any) => {
   const [value, setValue] = useState('today');
   const theme: any = useTheme();
-  const customization = useSelector((state) => state.customization);
+  const customization = useSelector((state: any) => state.customization);
 
   const { navType } = customization;
   const { primary } = theme.palette.text;
@@ -128,8 +128,8 @@ const TotalGrowthBarChart = ({ isLoading }) => {
   );
 };
 
-TotalGrowthBarChart.propTypes = {
-  isLoading: PropTypes.bool
-};
+// TotalGrowthBarChart.propTypes = {
+//   isLoading: PropTypes.bool
+// };
 
 export default TotalGrowthBarChart;

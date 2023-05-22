@@ -1,5 +1,5 @@
 import React from 'react'
-import PropTypes from 'prop-types';
+// import PropTypes from 'prop-types';
 import { motion } from 'framer-motion';
 
 // ==============================|| ANIMATION FOR CONTENT ||============================== //
@@ -33,8 +33,8 @@ const NavMotion = ({ children }: any) => {
   );
 };
 
-NavMotion.propTypes = {
-  children: PropTypes.node
-};
+// NavMotion.propTypes = {
+//   children: PropTypes.node
+// };
 
 export default NavMotion;

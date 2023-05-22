@@ -1,4 +1,4 @@
-import PropTypes from 'prop-types';
+// import PropTypes from 'prop-types';
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import React from 'react';
@@ -171,17 +171,17 @@ const Breadcrumbs = ({ card, divider, icon, icons, maxItems, navigation, rightAl
   return breadcrumbContent;
 };
 
-Breadcrumbs.propTypes = {
-  card: PropTypes.bool,
-  divider: PropTypes.bool,
-  icon: PropTypes.bool,
-  icons: PropTypes.bool,
-  maxItems: PropTypes.number,
-  navigation: PropTypes.object,
-  rightAlign: PropTypes.bool,
-  separator: PropTypes.oneOfType([PropTypes.func, PropTypes.object]),
-  title: PropTypes.bool,
-  titleBottom: PropTypes.bool
-};
+// Breadcrumbs.propTypes = {
+//   card: PropTypes.bool,
+//   divider: PropTypes.bool,
+//   icon: PropTypes.bool,
+//   icons: PropTypes.bool,
+//   maxItems: PropTypes.number,
+//   navigation: PropTypes.object,
+//   rightAlign: PropTypes.bool,
+//   separator: PropTypes.oneOfType([PropTypes.func, PropTypes.object]),
+//   title: PropTypes.bool,
+//   titleBottom: PropTypes.bool
+// };
 
 export default Breadcrumbs;

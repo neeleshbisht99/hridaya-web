@@ -1,4 +1,4 @@
-import PropTypes from 'prop-types';
+// import PropTypes from 'prop-types';
 
 // material-ui
 import { useTheme } from '@mui/material/styles';
@@ -54,8 +54,8 @@ const NavGroup = ({ item }: any) => {
   );
 };
 
-NavGroup.propTypes = {
-  item: PropTypes.object
-};
+// NavGroup.propTypes = {
+//   item: PropTypes.object
+// };
 
 export default NavGroup;

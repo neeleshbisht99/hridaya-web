@@ -1,4 +1,4 @@
-import PropTypes from 'prop-types';
+// import PropTypes from 'prop-types';
 import { useEffect, useState } from 'react';
 import { useSelector } from 'react-redux';
 import { useLocation, useNavigate } from 'react-router';
@@ -150,9 +150,9 @@ const NavCollapse = ({ menu, level }: any) => {
   );
 };
 
-NavCollapse.propTypes = {
-  menu: PropTypes.object,
-  level: PropTypes.number
-};
+// NavCollapse.propTypes = {
+//   menu: PropTypes.object,
+//   level: PropTypes.number
+// };
 
 export default NavCollapse;

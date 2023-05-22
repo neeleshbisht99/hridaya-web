@@ -6,20 +6,20 @@ const icons = { IconDashboard };
 
 // ==============================|| DASHBOARD MENU ITEMS ||============================== //
 
-const dashboard = {
-  id: 'dashboard',
-  title: 'Dashboard',
+const patientStudies = {
+  id: 'patientStudies',
+  title: 'Studies',
   type: 'group',
   children: [
     {
-      id: 'default',
-      title: 'Dashboard',
+      id: 'analysis',
+      title: 'Analysis',
       type: 'item',
-      url: '/dashboard',
+      url: '/',
       icon: icons.IconDashboard,
       breadcrumbs: false
     }
   ]
-};
+}
 
-export default dashboard;
+export default patientStudies;

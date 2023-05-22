@@ -1,5 +1,5 @@
-import PropTypes from 'prop-types';
-
+// import PropTypes from 'prop-types';
+import React from 'react'
 // material-ui
 import { Box, Card, Grid } from '@mui/material';
 
@@ -11,7 +11,7 @@ import { gridSpacing } from 'src/store/constant';
 
 // ===============================|| SHADOW BOX ||=============================== //
 
-const ShadowBox = ({ shadow }) => (
+const ShadowBox = ({ shadow }: any) => (
   <Card sx={{ mb: 3, boxShadow: shadow }}>
     <Box
       sx={{
@@ -28,9 +28,9 @@ const ShadowBox = ({ shadow }) => (
   </Card>
 );
 
-ShadowBox.propTypes = {
-  shadow: PropTypes.string.isRequired
-};
+// ShadowBox.propTypes = {
+//   shadow: PropTypes.string.isRequired
+// };
 
 // ============================|| UTILITIES SHADOW ||============================ //
 

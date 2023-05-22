@@ -1,4 +1,4 @@
-import PropTypes from 'prop-types';
+// import PropTypes from 'prop-types';
 import { forwardRef, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
@@ -107,9 +107,9 @@ const NavItem = ({ item, level }: any) => {
   );
 };
 
-NavItem.propTypes = {
-  item: PropTypes.object,
-  level: PropTypes.number
-};
+// NavItem.propTypes = {
+//   item: PropTypes.object,
+//   level: PropTypes.number
+// };
 
 export default NavItem;

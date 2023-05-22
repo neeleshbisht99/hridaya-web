@@ -1,4 +1,4 @@
-import PropTypes from 'prop-types';
+// import PropTypes from 'prop-types';
 import React from 'react'
 // material-ui
 import { styled, useTheme } from '@mui/material/styles';
@@ -75,9 +75,9 @@ function LinearProgressWithLabel({ value, ...others }: any) {
   );
 }
 
-LinearProgressWithLabel.propTypes = {
-  value: PropTypes.number
-};
+// LinearProgressWithLabel.propTypes = {
+//   value: PropTypes.number
+// };
 
 // ==============================|| SIDEBAR MENU Card ||============================== //
 
