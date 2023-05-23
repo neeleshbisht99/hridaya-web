@@ -8,6 +8,8 @@ import Loadable from 'src/ui-component/Loadable';
 // main routing
 const PatientList = Loadable(lazy(() => import('src/views/studies/patientList')));
 
+const PatientDetail = Loadable(lazy(() => import('src/views/studies/patientDetail')));
+
 // dashboard routing
 const DashboardDefault = Loadable(lazy(() => import('src/views/dashboard/Default')));
 
@@ -31,6 +33,10 @@ const MainRoutes = {
     {
       path: '/',
       element: <PatientList />
+    },
+    {
+      path: '/patient/:id',
+      element: <PatientDetail />
     },
     {
       path: '/dashboard',

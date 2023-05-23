@@ -67,12 +67,12 @@
         "patterns": ["@mui/*/*/*", "!@mui/material/test-utils/*"]
       }
     ],
-    "no-unused-vars": [
-      "error",
-      {
-        "ignoreRestSiblings": false
-      }
-    ],
+    // "no-unused-vars": [
+    //   "error",
+    //   {
+    //     "ignoreRestSiblings": false
+    //   }
+    // ],
     "prettier/prettier": [
       "warn",
       {
@@ -81,8 +81,7 @@
         "singleQuote": true,
         "trailingComma": "none",
         "tabWidth": 2,
-        "useTabs": false,
-        "endOfLine": "auto"
+        "useTabs": false
       }
     ]
   }

@@ -35,7 +35,7 @@ const PatientList = () => {
     console.log(rowParams, a)
     let id = rowParams?.id
     if (!id) return
-    navigate(`/acs/patient/${id}`)
+    navigate(`/patient/${id}`)
   }
 
   return (
