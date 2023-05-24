@@ -40,8 +40,8 @@
   },
   "plugins": ["prettier", "react", "react-hooks"],
   "rules": {
-    "react/jsx-uses-react": "error",
-    "react/jsx-uses-vars": "error",
+    "react/jsx-uses-react": "off",
+    "react/jsx-uses-vars": "off",
     "react/react-in-jsx-scope": "off",
     "no-undef": "off",
     "react/display-name": "off",
@@ -67,6 +67,7 @@
         "patterns": ["@mui/*/*/*", "!@mui/material/test-utils/*"]
       }
     ],
+    "no-unused-vars": "off",
     // "no-unused-vars": [
     //   "error",
     //   {

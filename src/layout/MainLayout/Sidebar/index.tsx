@@ -19,7 +19,8 @@ import { drawerWidth } from 'src/store/constant';
 const Sidebar = ({ drawerOpen, drawerToggle, window }: any) => {
   const theme: any = useTheme();
   const matchUpMd = useMediaQuery(theme.breakpoints.up('md'));
-
+  const isDevEnv = process.env.NODE_ENV === 'DEV'
+  console.log("check isDevEnv", isDevEnv, process.env.NODE_ENV)
   const drawer = (
     <>
       <Box sx={{ display: { xs: 'block', md: 'none' } }}>
@@ -37,7 +38,7 @@ const Sidebar = ({ drawerOpen, drawerToggle, window }: any) => {
           }}
         >
           <MenuList />
-          <MenuCard />
+          {isDevEnv ? <MenuCard /> : ''}
           <Stack direction="row" justifyContent="center" sx={{ mb: 2 }}>
             <Chip label={process.env.REACT_APP_VERSION as any} disabled size="small" sx={{ cursor: 'pointer' }} />
           </Stack>
@@ -46,7 +47,7 @@ const Sidebar = ({ drawerOpen, drawerToggle, window }: any) => {
       <MobileView>
         <Box sx={{ px: 2 }}>
           <MenuList />
-          <MenuCard />
+          {isDevEnv ? <MenuCard /> : ''}
           <Stack direction="row" justifyContent="center" sx={{ mb: 2 }}>
             <Chip label={process.env.REACT_APP_VERSION as any} disabled size="small" sx={{ cursor: 'pointer' }} />
           </Stack>

@@ -15,7 +15,7 @@ const LogoSection = () => {
   const defaultId = useSelector((state: any) => state.customization.defaultId);
   const dispatch = useDispatch();
   return (
-    <ButtonBase disableRipple onClick={() => dispatch({ type: MENU_OPEN, id: defaultId })} component={Link} to={config.defaultPath}>
+    <ButtonBase disableRipple onClick={() => dispatch({ type: MENU_OPEN, id: defaultId })} component={Link} to={config.defaultPath} style={{ width: '100%' }}>
       <Logo />
     </ButtonBase>
   );
