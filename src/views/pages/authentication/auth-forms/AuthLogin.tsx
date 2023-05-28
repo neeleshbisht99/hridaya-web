@@ -134,7 +134,7 @@ const FirebaseLogin = ({ ...others }) => {
               setStatus({ success: true });
               setSubmitting(false);
             }
-          } catch (err) {
+          } catch (err: any) {
             console.error(err);
             if (scriptedRef.current) {
               setStatus({ success: false });

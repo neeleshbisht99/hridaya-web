@@ -58,7 +58,6 @@ const NavCollapse = ({ menu, level }: any) => {
       });
     }
 
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [pathname, menu.children]);
 
   // menu collapse & item

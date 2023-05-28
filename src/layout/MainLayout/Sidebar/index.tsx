@@ -19,7 +19,7 @@ import { drawerWidth } from 'src/store/constant';
 const Sidebar = ({ drawerOpen, drawerToggle, window }: any) => {
   const theme: any = useTheme();
   const matchUpMd = useMediaQuery(theme.breakpoints.up('md'));
-  const isDevEnv = process.env.NODE_ENV === 'DEV'
+  const isDevEnv = process.env.NODE_ENV === 'development'
   console.log("check isDevEnv", isDevEnv, process.env.NODE_ENV)
   const drawer = (
     <>

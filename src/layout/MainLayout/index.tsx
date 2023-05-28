@@ -17,8 +17,13 @@ import { SET_MENU } from 'src/store/actions';
 // assets
 import { IconChevronRight } from '@tabler/icons';
 
+interface IMainProps {
+  open: any,
+  theme: any
+}
+
 // styles
-const Main = styled('main', { shouldForwardProp: (prop: any) => prop !== 'open' })(({ theme, open }: any) => ({
+const Main = styled('main', { shouldForwardProp: (prop: any) => prop !== 'open' })(({ theme, open }: IMainProps) => ({
   ...theme.typography.mainContent,
   borderBottomLeftRadius: 0,
   borderBottomRightRadius: 0,
@@ -86,7 +91,7 @@ const MainLayout = () => {
       <Sidebar drawerOpen={!matchDownMd ? leftDrawerOpened : !leftDrawerOpened} drawerToggle={handleLeftDrawerToggle} />
 
       {/* main content */}
-      <Main theme={theme} open={leftDrawerOpened}>
+      <Main theme={theme} open={leftDrawerOpened} >
         {/* breadcrumb */}
         <Breadcrumbs separator={IconChevronRight} navigation={navigation} icon title rightAlign />
         <Outlet />
